@@ -1,0 +1,54 @@
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 2. Navbar */
+.navbar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+/* 3. Title */
+.title h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 4. Container */
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* 5. Map */
+#map {
+  height: 700px;
+  background-color: #e0e0e0; /* Temporary background */
+}
+
+/* 6. Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #666;
+  font-size: 14px;
+}
