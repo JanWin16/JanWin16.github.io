@@ -11,8 +11,12 @@ osm.addTo(map)
 async function addDistrictsGeoJson(url) {
   const response = await fetch(url);
   const data = await response.json();
-  const polygons = L.geojson(data);
+  const polygons = L.geoJson(data, {
+    style: {
+      color: '#3388ff',
+      weight: 2,
+      fillOpacity: 0.3
+    }
+  });
   polygons.addTo(map);
 }
-
-addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson');
