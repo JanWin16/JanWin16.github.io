@@ -11,7 +11,7 @@ osm.addTo(map)
 async function addDistrictsGeoJson(url) {
   const response = await fetch(url);
   const data = await response.json();
-  const polygons = L.geoJson(data);
+  const polygons = L.geojson(data);
   polygons.addTo(map);
 }
 
