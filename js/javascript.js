@@ -6,3 +6,13 @@ const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 })
 
 osm.addTo(map)
+
+// Add GeoJSON polygons layer for Tartu city districts
+async function addDistrictsGeoJson(url) {
+  const response = await fetch(url);
+  const data = await response.json();
+  const polygons = L.geoJson(data);
+  polygons.addTo(map);
+}
+
+addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson');
