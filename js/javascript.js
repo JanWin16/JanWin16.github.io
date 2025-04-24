@@ -73,14 +73,7 @@ function createCircle(feature, latlng) {
   return L.circleMarker(latlng, options)
 }
 
-async function addCelltowersGeoJson(url) {
-  const response = await fetch(url)
-  const data = await response.json()
-  const circles = L.geoJson(data, {
-    pointToLayer: createCircle,
-  })
-  circles.addTo(map)
-}
+
 addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
 
 // default map settings
