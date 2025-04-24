@@ -81,7 +81,6 @@ async function addCelltowersGeoJson(url) {
   })
   circles.addTo(map)
 }
-
 addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
 
 
