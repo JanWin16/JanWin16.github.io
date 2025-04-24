@@ -52,6 +52,7 @@ async function addDistrictsGeoJson(url) {
 addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
 
 // add geoJSON points layer*
+
 async function addCelltowersGeoJson(url) {
   const response = await fetch(url)
   const data = await response.json()
@@ -72,8 +73,6 @@ function createCircle(feature, latlng) {
   }
   return L.circleMarker(latlng, options)
 }
-
-
 addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
 
 // default map settings
