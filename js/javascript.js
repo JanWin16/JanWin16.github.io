@@ -60,7 +60,6 @@ async function addCelltowersGeoJson(url) {
   clusters.addLayer(markers)
   clusters.addTo(map)
 }
-addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
 
 function createCircle(feature, latlng) {
   let options = {
@@ -83,6 +82,6 @@ async function addCelltowersGeoJson(url) {
   circles.addTo(map)
 }
 
-
+addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
 
 
