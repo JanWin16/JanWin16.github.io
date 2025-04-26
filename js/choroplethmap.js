@@ -1,4 +1,4 @@
-let map = L.map('map').setView([58.373523, 26.716045], 12)
+Tolet map = L.map('map').setView([58.373523, 26.716045], 12)
 
 const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
@@ -40,7 +40,7 @@ async function addGeoJson(url) {
     },
     onEachFeature: function (feature, layer) {
       layer.bindPopup(
-        `${feature.properties.NIMI}<br>Value: ${feature.properties.OBJECTID}`
+        `${feature.properties.NIMI}<br>Cell Towers: ${feature.properties.OBJECTID}`
       );
     },
   }).addTo(map)
