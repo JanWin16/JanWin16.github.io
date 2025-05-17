@@ -1,3 +1,4 @@
 The self-generated turf function can be found directly next to the function from the data which is located at the geography building.
-My own function computes the centroid as the mean of all vertices within the object.
-This can be useful to detect the center of an object
+
+The turf.centroid() function calculates the geometric center (center of mass) of a polygon. It analyzes the shape's area and returns a point that represents its balance point. This centroid may lie outside the polygon for irregular shapes, as it’s based on overall geometry, not position within the shape.
+This is useful for spatial analysis tasks like labeling, mapping central locations, or summarizing the position of a geographic area.
