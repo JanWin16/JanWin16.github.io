@@ -101,7 +101,7 @@ async function loadChoroplethLayer() {
           fillOpacity: 0.8,
         },
         onEachFeature: function(feature, layer) {
-          layer.bindPopup('Value: ' + feature.properties.OBJECTID)
+          layer.bindPopup('Cell Towers: ' + feature.properties.OBJECTID)
         },
         pane: 'customDistrictPane'
       })
